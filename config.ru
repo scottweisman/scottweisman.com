@@ -34,7 +34,7 @@ end
 
 # Redirect www to non-www
 gem 'rack-rewrite', '~> 1.2.1'
-require 'rack-rewrite', '~> 1.2.1'
+require 'rack-rewrite'
 
 ENV['RACK_ENV'] ||= 'development'
 ENV['SITE_URL'] ||= 'scottweisman.com'
