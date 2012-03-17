@@ -15,6 +15,6 @@ PLATFORMS
 
 DEPENDENCIES
   builder
-  rack-rewrite
+  rack-rewrite (~> 1.2.1)
   rdiscount
   toto
