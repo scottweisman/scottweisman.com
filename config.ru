@@ -33,7 +33,8 @@ toto = Toto::Server.new do
 end
 
 # Redirect www to non-www
-require 'rack-rewrite'
+gem 'rack-rewrite', '~> 1.2.1'
+require 'rack/rewrite'
 use Rack::Rewrite do
   r301 %r{.*}, 'http://scottweisman.com$&',
   :if => Proc.new { |rack_env| rack_env['SERVER_NAME'] != 'scottweisman.com' } 
