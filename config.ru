@@ -32,6 +32,17 @@ toto = Toto::Server.new do
   set :date, lambda {|now| now.strftime("%B #{now.day.ordinal} %Y") }
 end
 
+# Redirect www to non-www
+gem 'rack-rewrite', '~> 0.2.1'
+require 'rack-rewrite'
+if ENV['RACK_ENV'] == 'production'
+    use Rack::Rewrite do
+        r301 %r{.*}, 'http://scottweisman.com$&', :if => Proc.new {|rack_env|
+        rack_env['SERVER_NAME'] != 'scottweisman.com'
+    }
+    end
+end
+
 run toto
 
 

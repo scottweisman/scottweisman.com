@@ -1,19 +1,37 @@
 <!doctype html>
 <html>
   <head>
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu|Merriweather:400' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="/css/main.css">
     <link rel="alternate" type="application/atom+xml" title="<%= title %> - feed" href="/index.xml" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
-    <title><%= title %></title>
+    <title>
+    <% if @path == 'index' %>
+        Scott Weisman
+    <% elsif @path.split('/').compact.length == 4 %>
+        <%= title %> - Scott Weisman
+    <% else %>
+        <%= @path.capitalize.gsub(/[-]/, ' ') %> - Scott Weisman
+    <% end %>
+    </title>
   </head>
   <body>
-    <div id="logo"><a href="/">Scott Weisman</a></div>
+    <header>
+      <span class="title">
+        <a href="/">Scott Weisman</a>
+      </span>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+        </ul>
+      </nav>
+    </header>
+      
     <section>
       <%= yield %> 
     </section>
-    <footer>
-      powered by <a href="http://cloudhead.io/toto">toto</a>
-    </footer>
+    <footer></footer>
   </body>
 </html>
 

@@ -1,15 +1,38 @@
 html { margin: 20px }
 body {
   margin: 0 auto;
-  font-family: 'Baskerville', Georgia, Times, serif;
-  font-size: 20px;
-  line-height: 30px;
+  font-family: 'Merriweather', georgia, serif;
+  font-size: 16px;
+  line-height: 28px;
   padding: 15px;
-  width: 720px;
+  width: 590px;
 
 }
 header, footer, section, article {
 	display: block;
+}
+header {
+	margin-bottom: 20px;
+	border-bottom: 1px solid #b83000;
+}
+header a {
+	font-family: 'Ubuntu', Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size: 24px;
+}
+nav {
+	display: inline;
+}
+nav ul {
+	float: right;
+	list-style-type: none;
+}
+nav ul, nav ol {
+	margin: 0;
+}
+nav ul li, nav ul li a {
+	display: inline;
+	margin-left: 10px;
+	font-size: 18px;
 }
 #content {
 }
@@ -27,27 +50,25 @@ header, footer, section, article {
 	color: #b53131;
 }
 .date {
-  font-style: italic;
-  float: right;
   line-height: 43px;
-  margin-right: 30px;
+  margin-left: 20px;
+	color: #777;
 }
 a {
   color: #b83000;
+	text-decoration: none;
 }
 h1 a {
   color: black;
   text-decoration: none;
 }
-a:hover {
-  text-decoration: underline;
+h1, h2 {
+	font-family: 'Ubuntu', Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size: 24px;
 }
-body > header > h1 {
-	border-left: 30px solid black;
-	padding-left: 30px;
-  font-size: 201px;
-  margin: 100px 0 15px 0;
-  font-weight: normal;
+a:hover {
+  text-decoration: none;
+	color: #666;
 }
 .post header {
 	margin-bottom: 10px;
@@ -68,28 +89,15 @@ body > header > h1 {
   margin: 10px 0;
 }
 .post .more {
-  margin-top: -10px;
-  margin-right: 30px;
   font-style: italic;
-  text-align: right;
 }
 .more a {
   text-decoration: none;
-}
-.more a:hover { text-decoration: underline }
-body > header {
-	display: block;
-	padding-top: 30px;
-	line-height: 180px;
-	margin-bottom: 20px;
 }
 h1, h2, h3, h4 {
   display: inline;
   margin: 0;
   font-weight: 600;
-}
-ul, li {
-  list-style-type: none;
 }
 code {
   font-family: 'Anonymous Pro', 'Bitstream Vera Sans', 'Monaco', Courier, mono;
