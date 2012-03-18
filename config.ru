@@ -1,6 +1,16 @@
 require 'bundler'
 Bundler.setup
 
+# Redirect www to non-www
+gem 'rack-rewrite', '~> 1.2.1'
+require 'rack/rewrite'
+use Rack::Rewrite do
+  r301 %r{.*}, 'http://scottweisman.com$&',
+  :if => Proc.new { |rack_env| rack_env['SERVER_NAME'] != 'scottweisman.com' } 
+
+  r301 %r{^(.+)/$}, '$1'
+end
+
 require 'toto'
 
 # Rack config
@@ -32,15 +42,6 @@ toto = Toto::Server.new do
   set :date, lambda {|now| now.strftime("%B #{now.day.ordinal} %Y") }
 end
 
-# Redirect www to non-www
-gem 'rack-rewrite', '~> 1.2.1'
-require 'rack/rewrite'
-use Rack::Rewrite do
-  r301 %r{.*}, 'http://scottweisman.com$&',
-  :if => Proc.new { |rack_env| rack_env['SERVER_NAME'] != 'scottweisman.com' } 
-
-  r301 %r{^(.+)/$}, '$1'
-end
 
 run toto
 
