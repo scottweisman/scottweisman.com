@@ -2,7 +2,6 @@ require 'bundler'
 Bundler.setup
 
 # Redirect www to non-www
-gem 'rack-rewrite', '~> 1.2.1'
 require 'rack/rewrite'
 use Rack::Rewrite do
   r301 %r{.*}, 'http://scottweisman.com$&',
