@@ -2,8 +2,7 @@ require 'bundler'
 Bundler.setup
 
 # Redirect www to non-www
-gem 'rack-rewrite', '~> 0.2.1'
-require 'rack-rewrite'
+require 'rack/rewrite'
 if ENV['RACK_ENV'] == 'production'
     use Rack::Rewrite do
         r301 %r{.*}, 'http://yoursite.com$&', :if => Proc.new {|rack_env|
