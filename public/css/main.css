@@ -1,24 +1,75 @@
-html { margin: 20px }
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
 body {
-  margin: 0 auto;
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Custom CSS */
+
+body {
   font-family: 'Merriweather', georgia, serif;
   font-size: 16px;
-  line-height: 28px;
-  padding: 15px;
-  width: 590px;
+	font-weight: 300;
+	background-color: #F1F1F1;
 }
-p {
-	font-family: 'Merriweather', georgia, serif;
+#full-width {
+	width: 100%;
+	background-color: #FFFFFF;
+	padding: 20px 0;
+	border-bottom: 2px solid #2E2E2E;
 }
 header, footer, section, article {
 	display: block;
+	width: 590px;
+	margin: 0 auto;
 }
 header {
-	margin-bottom: 40px;
-	border-bottom: 1px solid #b83000;
+	padding: 5px 0;
 }
 header a {
-	font-family: 'PT Sans', Helvetica Neue, Helvetica, Arial, sans-serif;
 	font-size: 24px;
 }
 nav {
@@ -30,13 +81,18 @@ nav ul {
 }
 nav ul, nav ol {
 	margin: 0;
+	padding-top: 5px;
 }
 nav ul li, nav ul li a {
 	display: inline;
 	margin-left: 10px;
-	font-size: 18px;
+	font-size: 14px;
+	text-transform: uppercase;
 }
 #content {
+}
+section.main {
+	padding-top: 30px;
 }
 #by {
 	font-style: italic;
@@ -48,17 +104,13 @@ nav ul li, nav ul li a {
 	font-size: 24px;
 	margin: -135px 0 0 70px;
 }
-#path {
-	color: #b53131;
-}
 .date {
   line-height: 43px;
   margin-left: 20px;
 	color: #777;
-	font-family: 'PT Sans', Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 a {
-  color: #b83000;
+  color: #2E2E2E;
 	text-decoration: none;
 }
 h1 a {
@@ -66,8 +118,8 @@ h1 a {
   text-decoration: none;
 }
 h1, h2 {
-	font-family: 'PT Sans', Helvetica Neue, Helvetica, Arial, sans-serif;
 	font-size: 24px;
+	font-weight: 400;
 }
 a:hover {
   text-decoration: none;
@@ -93,14 +145,16 @@ a:hover {
 }
 .post .more {
   font-style: italic;
+	padding-top: 10px;
 }
 .more a {
   text-decoration: none;
+	text-transform: uppercase;
+	font-size: 12px;
 }
 h1, h2, h3, h4 {
   display: inline;
   margin: 0;
-  font-weight: 600;
 }
 code {
   font-family: 'Anonymous Pro', 'Bitstream Vera Sans', 'Monaco', Courier, mono;

@@ -1,11 +1,11 @@
 <!doctype html>
 <html>
-  <head>
-    <link href='http://fonts.googleapis.com/css?family=PT+Sans|Merriweather:400' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="/css/main.css">
-    <link rel="alternate" type="application/atom+xml" title="<%= title %> - feed" href="/index.xml" />
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
-    <title>
+<head>
+  <link href='http://fonts.googleapis.com/css?family=Merriweather:300,400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="/css/main.css">
+  <link rel="alternate" type="application/atom+xml" title="<%= title %> - feed" href="/index.xml" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
+  <title>
     <% if @path == 'index' %>
         Scott Weisman
     <% elsif @path.split('/').compact.length == 4 %>
@@ -13,39 +13,41 @@
     <% else %>
         <%= @path.capitalize.gsub(/[-]/, ' ') %> - Scott Weisman
     <% end %>
-    </title>
-  </head>
-  <body>
-    <header>
-      <span class="title">
-        <a href="/">Scott Weisman</a>
-      </span>
-      <nav>
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/about">About</a></li>
-        </ul>
-      </nav>
-    </header>
-      
-    <section>
-      <%= yield %> 
-    </section>
-    <footer></footer>
-  <script type="text/javascript">
+  </title>
+</head>
+  
+<body>
 
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-12419736-1']);
-    _gaq.push(['_trackPageview']);
+  <div id="full-width">
+  <header>
+    <a class="title" href="/">Scott Weisman</a>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+      </ul>
+    </nav>
+  </header>
+  </div>
+  
+  <section class="main">
+    <%= yield %> 
+  </section>
+  
+  <footer></footer>
 
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-12419736-1']);
+  _gaq.push(['_trackPageview']);
 
-  </script>
-    
-  </body>
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+  
+</body>
 </html>
 
