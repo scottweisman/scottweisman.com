@@ -84,6 +84,39 @@ footer a {
 	.navbar-fixed-top .container,.navbar-fixed-bottom .container {
 		width:90%;
 	}
+	body {
+		padding: 40px 0 30px;
+	}
+	.navbar .brand {
+		font-size: 16px;
+		padding: 5px;
+		margin-left: 0px;
+	}
+	.navbar .nav > li > a {
+		font-size: 12px;
+		padding: 5px 0 5px 10px;
+	}
 	
-		
+}
+
+@media only screen and (max-width: 767px), only screen and (max-device-width: 767px){
+	.container {
+		width: 90%;
+	}
+	.navbar-fixed-top .container,.navbar-fixed-bottom .container {
+		width:90%;
+	}
+	body {
+		padding: 40px 0 30px;
+	}
+	.navbar .brand {
+		font-size: 16px;
+		padding: 5px;
+		margin-left: 0px;
+	}
+	.navbar .nav > li > a {
+		font-size: 12px;
+		padding: 5px 0 5px 10px;
+	}
+	
 }
