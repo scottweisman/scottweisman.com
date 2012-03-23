@@ -28,6 +28,7 @@ toto = Toto::Server.new do
   #
   # Add your settings here
   # set [:setting], [value]
+  # set :shortdate, lambda {|now| now.strftime("%m/%d/%Y") }   # short date for archives
   # 
   # set :author,    ENV['USER']                               # blog author
   # set :title,     Dir.pwd.split('/').last                   # site title
