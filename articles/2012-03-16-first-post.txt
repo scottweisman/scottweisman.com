@@ -1,6 +1,0 @@
-title: First Post
-author: Scott Weisman
-date: 2012/03/16
-slug: first-post
-
-Hey, this is my first post.

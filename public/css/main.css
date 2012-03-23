@@ -1,66 +1,116 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
+/*
+* Adapted from:
+* Skeleton V1.1
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* 8/17/2011
 */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+
+/* #Reset & Basics (Inspired by E. Meyers) */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
+	vertical-align: baseline; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block; }
 body {
-	line-height: 1;
-}
+	line-height: 1; }
 ol, ul {
-	list-style: none;
-}
+	list-style: none; }
 blockquote, q {
-	quotes: none;
-}
+	quotes: none; }
 blockquote:before, blockquote:after,
 q:before, q:after {
 	content: '';
-	content: none;
-}
+	content: none; }
 table {
 	border-collapse: collapse;
-	border-spacing: 0;
-}
+	border-spacing: 0; }
 
-/* Custom CSS */
 
+/* #Basic Styles */
 body {
-  font-family: 'Merriweather', georgia, serif;
-  font-size: 16px;
-	line-height: 26px;
-	font-weight: 300;
-	background-color: #F1F1F1;
+	background: #F1F1F1;
+	font: 300 16px/24px 'Merriweather', georgia, serif;
+	color: black;
+	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+	-webkit-text-size-adjust: 100%;
 }
+
+
+/* #Typography */
+h1, h2, h3, h4, h5, h6 {
+	color: #181818;
+	font-weight: normal;}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
+h1 { font-size: 28px; line-height: 34px; margin-bottom: 10px; font-weight: 700; }
+h2 { font-size: 26px; line-height: 32px; margin-bottom: 8px; font-weight: 700; }
+h3 { font-size: 21px; line-height: 30px; margin-bottom: 6px; font-weight: 700; }
+h4 { font-size: 17px; line-height: 24px; }
+h5 { font-size: 14px; line-height: 21px; }
+.subheader { color: #777; }
+
+p { margin: 0 0 20px 0; }
+p img { margin: 0; }
+p.lead { font-size: 21px; line-height: 27px; color: #777;  }
+
+em { font-style: italic; }
+strong { font-weight: bold; color: #333; }
+small { font-size: 80%; }
+
+/*	Blockquotes  */
+blockquote, blockquote p { font-size: 17px; line-height: 24px; color: #777; font-style: italic; }
+blockquote { margin: 0 0 20px; padding: 9px 20px 0 19px; border-left: 1px solid #ddd; }
+blockquote cite { display: block; font-size: 12px; color: #555; }
+blockquote cite:before { content: "\2014 \0020"; }
+blockquote cite a, blockquote cite a:visited, blockquote cite a:visited { color: #555; }
+
+hr { border: solid #ddd; border-width: 1px 0 0; clear: both; margin: 10px 0 30px; height: 0; }
+
+
+/* #Links */
+a, a:visited { color: #00759D; text-decoration: none; outline: 0; }
+a:hover, a:focus { color: #444; text-decoration: none; }
+p a, p a:visited { line-height: inherit; }
+.content a:hover { border-bottom: dotted #444 1px; }
+
+/* #Lists */
+ul, ol { margin-bottom: 20px; }
+ul { list-style: none outside; }
+ol { list-style: decimal; }
+ol, ul.square, ul.circle, ul.disc { margin-left: 30px; }
+ul.square { list-style: square outside; }
+ul.circle { list-style: circle outside; }
+ul.disc { list-style: disc outside; }
+ul ul, ul ol,
+ol ol, ol ul { margin: 4px 0 5px 30px; font-size: 90%;  }
+ul ul li, ul ol li,
+ol ol li, ol ul li { margin-bottom: 6px; }
+li { line-height: 18px; margin-bottom: 12px; }
+ul.large li { line-height: 21px; }
+li p { line-height: 21px; }
+
+/* #Images */
+
+img.scale-with-grid {
+	max-width: 100%;
+	height: auto; }
+
+
+/********************
+	Custom CSS 
+*********************/
+
 #full-width {
 	width: 100%;
 	background-color: #FFFFFF;
 	padding: 20px 0;
 	border-bottom: 1px solid #2E2E2E;
 }
+
 header, footer, section, article {
 	display: block;
 	width: 590px;
@@ -74,6 +124,9 @@ header a {
 	text-decoration: none;
 	border: none;
 }
+
+/* Nav */
+
 nav {
 	display: inline;
 }
@@ -83,7 +136,7 @@ nav ul {
 }
 nav ul, nav ol {
 	margin: 0;
-	padding-top: 5px;
+	padding-top: 2px;
 }
 nav ul li, nav ul li a {
 	display: inline;
@@ -91,55 +144,25 @@ nav ul li, nav ul li a {
 	font-size: 14px;
 	text-transform: uppercase;
 }
-#content {
-}
 section.main {
 	padding-top: 30px;
 }
-#by {
-	font-style: italic;
-  margin-right: 5px;
-	font-size: 28px;
-}
-#caption {
-	position: absolute;
-	font-size: 24px;
-	margin: -135px 0 0 70px;
-}
 .date {
-  line-height: 43px;
-  margin-left: 20px;
+  margin-left: 15px;
 	color: #777;
-}
-a {
-  color: #00759D;
-	text-decoration: none;
 }
 h1 a {
   color: black;
   text-decoration: none;
 }
-h1, h2 {
-	font-size: 24px;
-	font-weight: 400;
+
+/* Posts */
+
+.title {
+	margin-bottom: 10px;
 }
-h2 a {
-	border: none;
-}
-h3 {
-	font-size: 20px;
-	font-weight: 400;
-	padding: 15px 0 5px;
-}
-.about p {
-  margin: 10px 0;
-}
-a:hover {
-  text-decoration: none;
-	color: #666;
-}
-.content a:hover {
-	border-bottom: dotted #666 1px;
+.post h1, .post h2 {
+	display: inline;
 }
 .post header {
 	margin-bottom: 10px;
@@ -156,9 +179,6 @@ a:hover {
 .post:last-child {
   margin-bottom: 10px;
 }
-.post p {
-  margin: 10px 0;
-}
 .post .more {
   font-style: italic;
 	padding-top: 10px;
@@ -171,23 +191,12 @@ a:hover {
 #archives {
 	margin-top: 40px;
 }
-h1.archives {
-	line-height: 56px;
-}
-h1, h2, h3, h4 {
-  display: inline;
-  margin: 0;
-}
 code {
   font-family: 'Anonymous Pro', 'Bitstream Vera Sans', 'Monaco', Courier, mono;
 }
 pre {
   padding: 20px;
 }
-blockquote {
-  font-style: italic;
-}
-
 footer {
 	border-top: dotted #BBB 1px;
 	margin-top: 60px;
@@ -202,3 +211,4 @@ footer p {
 footer a {
 	border: none;
 }
+

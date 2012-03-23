@@ -1,6 +1,0 @@
-title: Draft Post
-author: Scott Weisman
-date: 2012/03/18
-slug: draft-post
-
-Hey, this is just a draft post.

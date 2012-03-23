@@ -1,23 +1,30 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
 <head>
-  <link href='http://fonts.googleapis.com/css?family=Merriweather:300,400,700' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" type="text/css" href="/css/main.css">
-  <link rel="alternate" type="application/atom+xml" title="<%= title %> - feed" href="/index.xml" />
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
-  <title>
-    <% if @path == 'index' %>
-        Scott Weisman
-    <% elsif @path.split('/').compact.length == 4 %>
-        <%= title %> - Scott Weisman
-    <% else %>
-        <%= @path.capitalize.gsub(/[-]/, ' ') %> - Scott Weisman
-    <% end %>
-  </title>
+<link href='http://fonts.googleapis.com/css?family=Merriweather:300,400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="/css/main.css">
+  
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<link rel="alternate" type="application/atom+xml" title="<%= title %> - feed" href="/index.xml" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  <% if @path == 'index' %>
+    Scott Weisman
+  <% elsif @path.split('/').compact.length == 4 %>
+    <%= title %> - Scott Weisman
+  <% else %>
+    <%= @path.capitalize.gsub(/[-]/, ' ') %> - Scott Weisman
+  <% end %>
+</title>
+<meta name="description"
+content="<%= @context[:description] || 'Scott Weisman is a lawyer turned web developer in Chicago' %>" />
 </head>
   
 <body>
-
+  
   <div id="full-width">
   <header>
     <a class="title" href="/">Scott Weisman</a>
@@ -32,7 +39,7 @@
   </div>
   
   <section class="main">
-    <%= yield %> 
+    <%= yield %>
   </section>
   
   <footer>

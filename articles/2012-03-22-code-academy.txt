@@ -1,5 +1,5 @@
 title: Code Academy
-author: Scott Weisman
+description: Getting started with Code Academy Spring 2012
 date: 2012/03/22
 slug: code-academy
 
@@ -7,4 +7,4 @@ Well, it's official: In April, I'm leaving my job as a trial lawyer to work full
 
 [Code Academy](http://codeacademy.org) is an 11 week course that teaches the basics of web development using [Ruby on Rails](http://rubyonrails.org/).
 
-I've been teaching myself Rails for the past year or so. I've made a lot of progress, but I've found it difficult to get the the next level without any real support. I think Code Academy [Code Academy](http://codeacademy.org) is the perfect opportunity for me to continue learning, build my ideas, and get to know all of the awesome people in the Chicago development community. I can't wait to get started!
+I've been teaching myself Rails for the past year or so. I've made a lot of progress, but I've found it difficult to get the the next level without any real support. I think [Code Academy](http://codeacademy.org) is the perfect opportunity for me to continue learning, build my ideas, and get to know all of the awesome people in the Chicago development community. I can't wait to get started!

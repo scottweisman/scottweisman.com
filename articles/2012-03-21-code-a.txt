@@ -1,6 +1,0 @@
-title: Code A
-author: Scott Weisman
-date: 2012/03/21
-slug: code-a
-
-Hey, this is just a draft post.
