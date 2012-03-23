@@ -1,18 +1,19 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-<link href='http://fonts.googleapis.com/css?family=Merriweather:300,400,700' rel='stylesheet' type='text/css'>  
-  <!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-  <!--[if IE 7]>    <html class="lt-ie9 lt-ie8"> <![endif]-->
-  <!--[if IE 8]>    <html class="lt-ie9"> <![endif]-->
-  <!--[if gt IE 8]><!--> <html class=""> <!--<![endif]-->
+  <meta charset="utf-8">
+  <link href='http://fonts.googleapis.com/css?family=Merriweather:300|Open+Sans:400,700' rel='stylesheet' type='text/css'>  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/bootstrap-responsive.css" rel="stylesheet">
+  <link href="/css/main.css" rel="stylesheet" >
+  
+  <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
   <!--[if lt IE 9]>
-  	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
-<link rel="stylesheet" type="text/css" href="/css/main.css">
 
 <link rel="alternate" type="application/atom+xml" title="<%= title %> - feed" href="/index.xml" />
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width">
 <title>
   <% if @path == 'index' %>
     Scott Weisman
@@ -27,20 +28,22 @@ content="<%= @context[:description] || 'Scott Weisman is a lawyer turned web dev
 </head>
   
 <body>
-  
-  <div id="full-width">
-  <header>
-    <a class="title" href="/">Scott Weisman</a>
-    <nav>
-      <ul>
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+  <div class="container">
+    <a class="brand" href="/">Scott Weisman</a>
+    <div class="nav-collapse">
+      <ul class="nav pull-right">
         <li><a href="/">Home</a></li>
         <li><a href="/about">About</a></li>
         <li><a href="/archives">Archives</a></li>
       </ul>
-    </nav>
-  </header>
+    </div>
   </div>
+</div>
+</div>
   
+<div class="container">
   <section class="main">
     <%= yield %>
   </section>
@@ -48,6 +51,8 @@ content="<%= @context[:description] || 'Scott Weisman is a lawyer turned web dev
   <footer>
     <p>Powered by <a href="http://cloudhead.io/toto">toto</a>
   </footer>
+</div>
+</div>
 
 <script type="text/javascript">
   var _gaq = _gaq || [];

@@ -1,12 +1,10 @@
-<h1 class="archives">Archives</h1>
-<section class="content">
-<ul>
+<h1>Archives</h1>
+<section class="archives">
   <% if archives.length > 0 %>
     <% for entry in archives %>
-      <li>
+      <p>
         <a href="<%= entry.path %>"><%= entry.title %></a>
-      </li>
+      </p>
     <% end %>
   <% end %>
-</ul>
 </section>
