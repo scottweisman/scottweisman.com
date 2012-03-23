@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <head>
-  <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
-  <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-  <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-  <!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
-<link href='http://fonts.googleapis.com/css?family=Merriweather:300,400,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Merriweather:300,400,700' rel='stylesheet' type='text/css'>  
+  <!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+  <!--[if IE 7]>    <html class="lt-ie9 lt-ie8"> <![endif]-->
+  <!--[if IE 8]>    <html class="lt-ie9"> <![endif]-->
+  <!--[if gt IE 8]><!--> <html class=""> <!--<![endif]-->
+  <!--[if lt IE 9]>
+  	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
 <link rel="stylesheet" type="text/css" href="/css/main.css">
-  
-<!--[if lt IE 9]>
-	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
 
 <link rel="alternate" type="application/atom+xml" title="<%= title %> - feed" href="/index.xml" />
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width">
 <title>
   <% if @path == 'index' %>
     Scott Weisman
