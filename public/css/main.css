@@ -77,7 +77,7 @@ footer a {
 
 /* Mobile Layout */
 
-@media only screen and (max-width: 480px), only screen and (max-device-width: 480px), only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5){
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px){
 	.container {
 		width: 90%;
 	}
@@ -94,7 +94,7 @@ footer a {
 	}
 	.navbar .nav > li > a {
 		font-size: 12px;
-		padding: 5px 0 5px 10px;
+		padding: 5px;
 	}
 	
 }
@@ -116,7 +116,7 @@ footer a {
 	}
 	.navbar .nav > li > a {
 		font-size: 12px;
-		padding: 5px 0 5px 10px;
+		padding: 5px;
 	}
 	
 }
