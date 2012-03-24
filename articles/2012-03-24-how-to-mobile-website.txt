@@ -39,7 +39,14 @@ To use ProtoFluid, [download](http://protofluid.com/javascript/protoFluid3.02.js
     <script type='text/javascript' src='/js/jquery-1.7.2.min.js'></script>  
     <script type='text/javascript' src='/js/protoFluid3.02.js'></script>
 
-Once you have ProtoFluid.js and jQuery.js installed and added to your HTML, all you have to do is add **#protoFluid** to the end of your url, like this: http://yourwebsite.com/#protoFluid
+Next, you also have to make a slight adjustment to your media queries by adding `max-width`. This allows ProtoFluid to simulate what the mobile version will look like. Your media queries should now look like this: 
+
+    @media only screen and (max-width: 480px), only screen and 
+    (max-device-width: 480px) {
+    
+    }
+
+Once you have ProtoFluid installed and your media queries updated, all you have to do is add **#protoFluid** to the end of your url, like this: http://yourwebsite.com/#protoFluid
 
 If you have everything installed correctly, your browser should look like this:
 [![ProtoFluid Screenshot](http://f.cl.ly/items/2h222O3p0l0N2F324013/Screen%20Shot%202012-03-23%20at%2010.48.19%20PM.png "ProtoFluid Screenshot")](http://f.cl.ly/items/2h222O3p0l0N2F324013/Screen%20Shot%202012-03-23%20at%2010.48.19%20PM.png)
