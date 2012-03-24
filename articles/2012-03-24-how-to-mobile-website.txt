@@ -1,0 +1,62 @@
+title: How I Made a Mobile Version of This Site
+description: How to make a mobile version of your website using CSS media queries and ProtoFluid.
+date: 2012/03/24
+slug: how-to-mobile-website
+
+When I first looked into how to create a mobile website, it sounded easy. But it actually turned out to be a little harder than I expected.
+
+### CSS Media Queries
+[CSS Media Queries](http://www.w3.org/TR/css3-mediaqueries/) allow you to specify CSS rules for particular screen sizes. For example, if you want to set specific CSS rules for screens that are 480px or less (like iPhones), you could place those specific rules within the following CSS:
+
+    @media only screen and (max-device-width: 480px) {
+    
+    }
+
+As long as you put @media rules like this at the **end** of your CSS file, they will override your standard CSS when a mobile device with the specified width visits your site.
+
+### Single or Separate Stylesheet
+You can either place your @media rules at the end of your existing stylesheet (as shown above), or use a separate stylesheet. To use a separate stylesheet, your HTML needs to specify when each stylesheet should be used. 
+
+    <link rel="stylesheet" type="text/css" media="only screen and
+    (max-device-width: 480px)" href="mobile-device.css" />
+    
+If you use the separate stylesheet method, the browser will rely on the HTML to direct it to the correct stylesheet for the device. Therefore, you do not need to specify the @media rules within the stylesheet itself. 
+
+A good rule of thumb is to use separate stylesheets when you are building a more complex mobile site. The mobile version for this blog is very simple, so I just specified @media queries within my existing stylesheet.
+
+### Set Viewport
+Whether you put your mobile CSS within your existing stylesheet or keep it separate, you should specify a viewport width in your HTML. To do so, put the following meta tag in your `<head>` tag: 
+
+    <meta name="viewport" content="width=device-width" />
+    
+### Testing Mobile Layouts
+Testing mobile sites can be a pain. Typically, you would need to commit changes to your live site and then visit the site on your phone to see how everything looks. Fortunately, there's a better way to do this.
+
+[ProtoFluid](http://protofluid.com/) is a tool that lets you preview your changes on various mobile devices right in your browser. [ProtoFluid](http://protofluid.com/) is only about $7 for unlimited use. They also offer a free trial. 
+
+To use ProtoFluid, [download](http://protofluid.com/javascript/protoFluid3.02.js) the most recent .js file and follow the [documentation](http://protofluid.com/?c=docs) to include the .js file in the `<head>` of your HTML. Don't forget to also download and specify [jQuery](http://docs.jquery.com/Downloading_jQuery#Download_jQuery). The `<head>` of your HTML should look like this:
+
+    <script type='text/javascript' src='/js/jquery-1.7.2.min.js'></script>  
+    <script type='text/javascript' src='/js/protoFluid3.02.js'></script>
+
+Once you have ProtoFluid.js and jQuery.js installed and added to your HTML, all you have to do is add **#protoFluid** to the end of your url, like this: http://yourwebsite.com/#protoFluid
+
+If you have everything installed correctly, your browser should look like this:
+[![ProtoFluid Screenshot](http://f.cl.ly/items/2h222O3p0l0N2F324013/Screen%20Shot%202012-03-23%20at%2010.48.19%20PM.png "ProtoFluid Screenshot")](http://f.cl.ly/items/2h222O3p0l0N2F324013/Screen%20Shot%202012-03-23%20at%2010.48.19%20PM.png)
+
+One of the best features of ProtoFluid is that you can preview changes to your code right in the browser with Web Inspector or Firebug like this: 
+[![ProtoFluid Inspector](http://f.cl.ly/items/0S0B3e1N0x1P0Z3T3G2A/Screen%20Shot%202012-03-23%20at%2010.27.49%20PM.png "ProtoFluid Inspector")](http://f.cl.ly/items/0S0B3e1N0x1P0Z3T3G2A/Screen%20Shot%202012-03-23%20at%2010.27.49%20PM.png)
+This makes it really easy to figure out which elements you need to change to make your site look great on mobile browsers.
+
+I preview changes for this site on my local server. With [ProtoFluid](http://protofluid.com/) I can just visit (http://localhost:3000/#protoFluid) to see what my site will look like on the iPhone, iPad, and other mobile devices. 
+
+So, how does it look? Have any other mobile tips? Get in touch with me on twitter [@scottweisman](http://twitter.com/scottweisman) and let me know.
+
+### More Information
+Check out the following sites for more information: 
+
+[How To Use CSS3 Media Queries To Create a Mobile Version of Your Website](http://coding.smashingmagazine.com/2010/07/19/how-to-use-css3-media-queries-to-create-a-mobile-version-of-your-website/)
+
+[Media Queries for Standard Devices](http://css-tricks.com/snippets/css/media-queries-for-standard-devices/)
+
+[ProtoFluid Documentation](http://protofluid.com/?c=docs)
