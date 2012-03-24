@@ -46,6 +46,7 @@ If you have everything installed correctly, your browser should look like this:
 
 One of the best features of ProtoFluid is that you can preview changes to your code right in the browser with Web Inspector or Firebug like this: 
 [![ProtoFluid Inspector](http://f.cl.ly/items/0S0B3e1N0x1P0Z3T3G2A/Screen%20Shot%202012-03-23%20at%2010.27.49%20PM.png "ProtoFluid Inspector")](http://f.cl.ly/items/0S0B3e1N0x1P0Z3T3G2A/Screen%20Shot%202012-03-23%20at%2010.27.49%20PM.png)
+
 This makes it really easy to figure out which elements you need to change to make your site look great on mobile browsers.
 
 I preview changes for this site on my local server. With [ProtoFluid](http://protofluid.com/) I can just visit (http://localhost:3000/#protoFluid) to see what my site will look like on the iPhone, iPad, and other mobile devices. 
