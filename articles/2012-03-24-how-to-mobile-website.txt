@@ -3,7 +3,7 @@ description: How to make a mobile version of your website using CSS media querie
 date: 2012/03/24
 slug: how-to-mobile-website
 
-When I first looked into how to create a mobile website, it sounded easy. But it actually turned out to be a little harder than I expected.
+When I first looked into how to create a mobile website, it sounded easy. But it actually turned out to be a little harder than I expected. Here's how I did it.
 
 ### CSS Media Queries
 [CSS Media Queries](http://www.w3.org/TR/css3-mediaqueries/) allow you to specify CSS rules for particular screen sizes. For example, if you want to set specific CSS rules for screens that are 480px or less (like iPhones), you could place those specific rules within the following CSS:
