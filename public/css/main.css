@@ -105,6 +105,10 @@ footer a {
 		font-size: 12px;
 		padding: 5px;
 	}
+	img {
+		width: 80%px;
+		padding: 5px;
+	}
 	
 }
 
@@ -125,6 +129,10 @@ footer a {
 	}
 	.navbar .nav > li > a {
 		font-size: 12px;
+		padding: 5px;
+	}
+	img {
+		width: 80%px;
 		padding: 5px;
 	}
 	
