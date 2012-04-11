@@ -52,7 +52,7 @@ If you have everything installed correctly, your browser should look like this:
 [![ProtoFluid Screenshot](/images/protofluid_screenshot.png "ProtoFluid Screenshot")](/images/protofluid_screenshot.png)
 
 One of the best features of ProtoFluid is that you can preview changes to your code right in the browser with Web Inspector or Firebug like this: 
-[![ProtoFluid Inspector](/images/protofluid_inspector.png "ProtoFluid Inspector")](/images/protofluid_screenshot.png)
+[![ProtoFluid Inspector](/images/protofluid_inspector.png "ProtoFluid Inspector")](/images/protofluid_inspector.png)
 
 This makes it really easy to figure out which elements you need to change to make your site look great on mobile browsers.
 
