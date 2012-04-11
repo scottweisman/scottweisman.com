@@ -1,0 +1,16 @@
+title: You Have to Build it Yourself
+description: If you want something, build it yourself
+date: 2012/04/10
+slug: build-it
+
+Growing up I always loved technology. When I was about 9 or 10, I watched a show on the latest products from the Consumer Electronic Show. 
+
+I assumed that we would soon automatically have handheld flat screens that played video and phones that could do live video chat. It didn't occur to me that actual people had to go out and design and build these things. It turned out that these ideas were never actually produced for any practical use until Apple made them a reality decades later. 
+
+If you've read Steve Jobs' biography, you know that he faced incredible hurdles with every product he created from the first Apple to the Macintosh to the iPod. Every major Apple product came dangerously close to never coming to life and could have easily been killed without the passion and persistence of Steve Jobs and others at Apple.
+
+It took me a long time to realize that **great products are not destined to be built; you have to build them. And if you don't build them, no one else will.**
+
+For the past couple of years I've attended the [American Bar Association's Techshow](http://www2.americanbar.org/calendar/TECHSHOW/Pages/default.aspx) in Chicago. Every year I hope to find software for lawyers that matches what I believe great software should be. But it never appears. 
+
+I've given up hope that someone else will create the software programs I'm looking for and decided to build them myself. So, for the next 11 weeks I'll be a student at [Code Academy](http://codeacademy.org/) sharpening my programming skills and building awesome applications for attorneys.
