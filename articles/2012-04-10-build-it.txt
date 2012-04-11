@@ -3,7 +3,7 @@ description: If you want something, build it yourself
 date: 2012/04/10
 slug: build-it
 
-Growing up I always loved technology. When I was about 9 or 10, I watched a show on the latest products from the Consumer Electronic Show. 
+Growing up I always loved technology. When I was about 9 or 10, I remember watching some news on the latest products from the Consumer Electronics Show. 
 
 I assumed that we would soon automatically have handheld flat screens that played video and phones that could do live video chat. It didn't occur to me that actual people had to go out and design and build these things. It turned out that these ideas were never actually produced for any practical use until Apple made them a reality decades later. 
 
