@@ -1,6 +1,6 @@
 title: Back to Basics - Code Academy Week 1
 description: Learning Ruby basics in my first week at Code Academy.
-date: 2012/04/14
+date: 2012/04/15
 slug: back-to-basics
 
 I made it through my first week of [Code Academy](http://codeacademy.org). Week 1 was all about building a solid foundation with the basics of Ruby. For me, Ruby has been much more difficult to learn than Rails. I think the reason is that learning Ruby can be a bit boring at first. The best way to learn a programming language is to build something with it. Unfortunately, there are not that many interesting things you can build with basic Ruby alone (at least not interesting to me). 
