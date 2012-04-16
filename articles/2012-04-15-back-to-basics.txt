@@ -7,7 +7,7 @@ I made it through my first week of [Code Academy](http://codeacademy.org). Week 
 
 With Rails, on the other hand, you can get up and running and build your own blog or small app pretty quickly. If you really want to dive into Rails you can do the awesome [Rails Tutorial](http://railstutorial.org) and build a functioning twitter-like app. 
 
-When you're working with Rails, it's easy to forget the magic Ruby is doing behind the scenes. You can create a Rails app with very little knowledge or Ruby, **but that doesn't mean that you should**. I think that learning Ruby from the ground up will allow me to have a much better understanding of what Rails is actually doing. So for the next week, in addition to class, I'll be diving deep into Chris Pine's [Learn to Program](http://www.amazon.com/Program-Second-Edition-Facets-Series/dp/1934356360/ref=tmm_pap_title_0).
+When you're working with Rails, it's easy to forget the magic Ruby is doing behind the scenes. You can create a Rails app with very little knowledge of Ruby, **but that doesn't mean that you should**. I think that learning Ruby from the ground up will allow me to have a much better understanding of what Rails is actually doing. So for the next week, in addition to class, I'll be diving deep into Chris Pine's [Learn to Program](http://www.amazon.com/Program-Second-Edition-Facets-Series/dp/1934356360/ref=tmm_pap_title_0).
 
 ## The Code Academy Experience
 
