@@ -1,0 +1,76 @@
+title: A Solid Ruby Foundation - Code Academy Week 2
+description: Building a solid foundation with Ruby basics in my second week at Code Academy.
+date: 2012/04/22
+slug: solid-foundation
+
+I've been working hard for the first two weeks of [Code Academy](http://codeacademy.org) to build a solid foundation with Ruby. As I mentioned in my [last post](http://scottweisman.com/2012/04/15/back-to-basics/), when you work with Rails it can be easy to forget the magic that Ruby is doing behind the scenes. 
+
+To make sure that I don't forget the basics of Ruby, I've outlined them over and over. Below is my most basic outline of Ruby concepts that I never want to forget. Some of the examples are taken from the excellent book [Learn to Program](http://www.amazon.com/Program-Second-Edition-Facets-Series/dp/1934356360/ref=tmm_pap_title_0) by Chris Pine. 
+
+## Arrays and Hashes  
+
+### Arrays
+
+Create new array and call 0 index: 
+
+    a = ["scott", "mike", "joe"]
+    a[0]    # => "scott"
+
+Add to array: 
+
+    a << "mark"   #or
+    a[3] = "mark"
+
+### Hashes
+
+Create new hash using symbol for key and call:
+ 
+    h = { :dog => "woof", "cat" => "meow" }
+    h[:dog]    # => "woof"
+
+Add to hash: 
+
+    h[:cow] = "moo"
+    
+
+## Iterators
+
+### Each Method (p. 66)
+
+    languages.each do |lang|
+      puts "I love " + lang
+    end
+
+### Integer Method (p. 67)
+
+    3.times do
+      puts 'hip-hip-hooray!'
+    end
+
+
+## Methods
+
+### Methods with parameters (p. 76)
+
+    def say_moo(number_of_moos)
+      puts 'mooooo...'*(number_of_moos)
+    end
+    
+    say_moo(3)   # This is the method call with parameter
+
+Initialize method is called automatically when new instance of class is created (p. 132)
+
+
+## Classes
+
+### Built in Classes (p. 117)
+
+Typically, you just create new built in classes by setting values: 
+
+    a = [1, 2, 3]   
+     
+But you are actually calling Array.new when you do this:  
+
+    a = Array.new + [1, 2, 3]
+
+
