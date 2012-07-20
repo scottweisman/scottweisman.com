@@ -23,7 +23,7 @@ Here's a simple RSpec request spec (test) with Capybara for user sign up:
       end
     end
 
-You don't need much programming experience to understand what's going on here. Our test is simulating what a user would do in the browser. The final line of the test `page.should have_content('Welcome')` is stating what the next page should show after a user clicks the 'Sign up' button. Simple, right? So go write some tests!
+You don't need much programming experience to understand what's going on here. The test is just going through the same sign up process that a user visiting your site would. The final line of the test `page.should have_content('Welcome')` is stating what the next page should show after a user clicks the 'Sign up' button. Simple, right? So go write some tests!
 
 Check out [Railscast #275](http://railscasts.com/episodes/275-how-i-test) for more information on this type of testing. 
 
